@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LSPU Login & Register</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- BACKGROUND IMAGE -->
+<img src="LSPU.jpg" class="bg-image">
+
+<!-- BLUR OVERLAY -->
+<div class="blur-layer"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button>🔍</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+      <div class="logo">LSPU Portal</div>
+
+      <h1>Welcome!</h1>
+
+      <p>
+        Laguna State Polytechnic University Student Portal.
+        Access your account securely and explore university services.
+      </p>
+
+      <div class="socials">
+        <i>🌐</i>
+        <i>📘</i>
+        <i>📷</i>
+        <i>🐦</i>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+      <!-- LOGIN FORM -->
+      <div class="form-box login-form">
+        <h2>Sign In</h2>
+
+        <form>
+          <div class="input-box">
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+
+          <div class="remember">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button class="btn">Sign In</button>
+
+          <div class="switch-form">
+            Don't have an account?
+            <span onclick="showRegister()">Register</span>
+          </div>
+        </form>
+      </div>
+
+      <!-- REGISTER FORM -->
+      <div class="form-box register-form">
+        <h2>Register</h2>
+
+        <form>
+          <div class="input-box">
+            <input type="text" required>
+            <label>Full Name</label>
+          </div>
+
+          <div class="input-box">
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required>
+            <label>Confirm Password</label>
+          </div>
+
+          <button class="btn">Create Account</button>
+
+          <div class="switch-form">
+            Already have an account?
+            <span onclick="showLogin()">Login</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
